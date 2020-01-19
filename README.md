@@ -16,4 +16,5 @@ $ update the `calculator_app_config.py` if required.
 $ `flask run` or `python wsgi.py`
 $ Open the browser at: http://127.0.0.1:8050/
 
-![alt text](https://github.com/waleadekoya/FeeCalculator/tree/master/LendableProject/calculator_app/static/css/FeeCalculatorScreenshot.png)
+![Alt text]
+(https://github.com/waleadekoya/FeeCalculator/tree/master/LendableProject/calculator_app/static/css/FeeCalculatorScreenshot.png)
