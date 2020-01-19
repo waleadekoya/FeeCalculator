@@ -87,4 +87,4 @@ class LoanApplication(FeeCalculator):
         super().__init__(term, loan_amount)
 
 
-"loan_fee = LoanApplication(24, 16382).loan_plus_fee(); print(loan_fee)"
+"loan_fee = LoanApplication(24, 16382).calculate_fee(); print(loan_fee)"
