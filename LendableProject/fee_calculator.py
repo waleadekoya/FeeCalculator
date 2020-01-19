@@ -33,7 +33,7 @@ class FeeCalculator(FeeStructure, ErrorMessages):
 
         Values in between the breakpoints is linearly interpolated
         using numpy between the lower bound and upper bound that they
-        between.
+        fall between.
         """
         try:
             self._input_validation()
