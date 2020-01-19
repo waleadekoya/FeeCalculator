@@ -14,6 +14,10 @@ class FeeCalculator(FeeStructure, ErrorMessages):
 
     This class is then wrapped in a simple flask micro-web framework
     to expose an API to this calculator
+    
+    Example Usage:
+    >>> loan_fee = LoanApplication(24, 16382).calculate_fee()
+    >>> print(loan_fee)
     """
 
     def __init__(self, term: int, loan_amount: float):
