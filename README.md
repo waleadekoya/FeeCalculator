@@ -1,5 +1,7 @@
 # A FeeCalculator wrapped in a Flask micro-web framework
 
+<img src="https://github.com/waleadekoya/FeeCalculator/tree/master/LendableProject/calculator_app/static/css/FeeCalculatorScreenshot.png" width="250"
+
 ![img0](https://github.com/waleadekoya/FeeCalculator/tree/master/LendableProject/calculator_app/static/css/FeeCalculatorScreenshot.png)
 
 ![img1](https://github.com/waleadekoya/FeeCalculator/tree/master/LendableProject/calculator_app/static/css/FeeCalculatorScreenshot2.png)
