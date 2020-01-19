@@ -4,7 +4,7 @@ How to Install
 ````
 # Create a virtualenv
 
-# Install the `requirements.txt` file in the virtualenv:
+# Install the `requirements.txt` file in the virtualenv
 
 # Get the fee-calculator app
 $ git clone https://github.com/waleadekoya/FeeCaculator.git
