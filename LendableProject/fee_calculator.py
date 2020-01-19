@@ -76,7 +76,7 @@ class FeeCalculator(FeeStructure, ErrorMessages):
         """
         :param num: accepts any float number
         :param base: the base to round to
-        :return: rounded amount that is an exact multiple of the given base
+        :return: rounded amount which is an exact multiple of the given base
         """
         return base * round(float(num) / base)
 
