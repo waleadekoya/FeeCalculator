@@ -1,12 +1,9 @@
 import numpy as np
 
-from fee_structure import FeeStructure
+from .fee_structure import FeeStructure
 
 
 class FeeCalculator(FeeStructure):
-    MIN_LOAN_AMT_ERROR_MSG = "The minimum loan amount is £1,000."
-    MAX_LOAN_AMT_ERROR_MSG = "The maximum loan amount is £20,000."
-    TERM_ERROR_MSG = "Loan term must be either 12 or 24 months."
 
     def __init__(self, term: int, loan_amount: float):
         self._term = term

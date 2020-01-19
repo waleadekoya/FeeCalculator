@@ -361,6 +361,5 @@ class MakeFlaskProjectDirectories:
         self.create_file(os.path.join(self.project_dir, 'start.sh'))
 
 
-MakeFlaskProjectDirectories(project_name='Flask_Blog',
-                            app_name='flask_blog_app',
-                            modular_apps=True)
+MakeFlaskProjectDirectories(project_name='Lendable',
+                            app_name='calculator_app')
