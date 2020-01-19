@@ -10,5 +10,5 @@ class CalculatorForm(FlaskForm):
 
     term = SelectField('Loan Term', choices=available_terms, validators=[DataRequired()])
     loan_amount = FloatField('Loan Amount', validators=[DataRequired()],
-                             render_kw={"placeholder": "e.g. Max. £20k, Min. £1k"})
+                             render_kw={"placeholder": "Max. £20k, Min. £1k"})
     submit = SubmitField('Calculate Fee')
