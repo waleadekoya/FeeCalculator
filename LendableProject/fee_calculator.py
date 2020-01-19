@@ -89,6 +89,3 @@ class LoanApplication(FeeCalculator):
 
     def __init__(self, term: int, loan_amount: float):
         super().__init__(term, loan_amount)
-
-
-"loan_fee = LoanApplication(24, 16382).calculate_fee(); print(loan_fee)"
