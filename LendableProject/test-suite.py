@@ -5,6 +5,10 @@ from fee_calculator import LoanApplication
 
 class FeeCalculatorTest(unittest.TestCase):
 
+    """
+    A test suite to validate the implemented solution for the Fee Calculator.
+    """
+
     def test_loan_fee(self):
         self.assertEqual(LoanApplication(24, 2750).calculate_fee(),
                          115)

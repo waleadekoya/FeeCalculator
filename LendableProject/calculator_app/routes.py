@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect
 
 from ..fee_calculator import FeeCalculator
 from .forms import CalculatorForm
