@@ -1,6 +1,6 @@
 import numpy as np
 
-from fee_structure import FeeStructure, ErrorMessages
+from .fee_structure import FeeStructure, ErrorMessages
 
 __author__ = "Wale Adekoya"
 __revision__ = "Version 1.0.0"
@@ -57,7 +57,15 @@ class FeeCalculator(FeeStructure, ErrorMessages):
         return self.TERM_12M_FEES if self._term == self.TERM_12M else self.TERM_24M_FEES
 
     def loan_plus_fee(self):
-        return self._round_fee(self._loan_amount + self.calculate_fee())
+        """
+        fulfil the requirements that the fee shall be rounded such that
+        (fee + loan amount) is an exact multiple of 5.
+        :return: (fee + loan amount) rounded to multiple of 5.
+        """
+        if isinstance(self.calculate_fee(), AssertionError):
+            return str(self.calculate_fee())
+        else:
+            return self._round_fee(self._loan_amount + self.calculate_fee())
 
     @staticmethod
     def _round_fee(num: float, base=5):
@@ -79,5 +87,5 @@ class LoanApplication(FeeCalculator):
         super().__init__(term, loan_amount)
 
 
-loan_fee = LoanApplication(24, 3822.22).calculate_fee()
+loan_fee = LoanApplication(24, 382285).loan_plus_fee()
 print(loan_fee)

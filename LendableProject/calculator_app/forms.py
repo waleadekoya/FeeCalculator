@@ -1,6 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import (SelectField, FloatField, SubmitField,
-                     BooleanField, ValidationError)
+from wtforms import SelectField, FloatField, SubmitField
 from wtforms.validators import DataRequired
 
 available_terms = [('12-month', 12), ('24-month', 24)]
