@@ -1,6 +1,6 @@
 # A FeeCalculator wrapped in a Flask micro-web framework
 
-![img0]images/FeeCalculatorScreenshot.png)
+![img0](images/FeeCalculatorScreenshot.png)
 
 ![img1](images/FeeCalculatorScreenshot2.png)
 
