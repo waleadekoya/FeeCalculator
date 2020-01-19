@@ -6,7 +6,7 @@ How to Install
 
 # Install the `requirements.txt` file in the virtualenv:
 
-# Get the progress app
+# Get the fee-calculator app
 $ git clone https://github.com/waleadekoya/FeeCaculator.git
 
 # Configure the app
