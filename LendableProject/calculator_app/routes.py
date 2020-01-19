@@ -18,8 +18,7 @@ def home():
             loan_plus_fee = FeeCalculator(term, loan_amount).loan_plus_fee()
             if not isinstance(fee, AssertionError):
                 flash(message='Your fee is £{}. It will cost you £{} at end of {} months.'
-                      .format(fee, loan_plus_fee, term),
-                      category='success')
+                      .format(fee, loan_plus_fee, term), category='success')
             else:
                 flash(message=str(fee), category='danger')
     context = {
