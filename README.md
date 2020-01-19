@@ -1,5 +1,8 @@
 # A FeeCalculator wrapped in a Flask micro-web framework
 
+![Alt text]
+(https://github.com/waleadekoya/FeeCalculator/tree/master/LendableProject/calculator_app/static/css/FeeCalculatorScreenshot.png)
+
 How to Install
 ````
 # Create a virtualenv
@@ -15,6 +18,3 @@ $ update the `calculator_app_config.py` if required.
 # Run the flask development server
 $ `flask run` or `python wsgi.py`
 $ Open the browser at: http://127.0.0.1:8050/
-
-![Alt text]
-(https://github.com/waleadekoya/FeeCalculator/tree/master/LendableProject/calculator_app/static/css/FeeCalculatorScreenshot.png)
