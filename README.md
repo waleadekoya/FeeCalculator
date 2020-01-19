@@ -1,4 +1,4 @@
-# A FeeCalculator wrapped in a Flask micro-app
+# A FeeCalculator wrapped in a Flask micro-web framework
 
 How to Install
 ````
