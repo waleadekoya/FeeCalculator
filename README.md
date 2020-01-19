@@ -1,6 +1,6 @@
 # A FeeCalculator wrapped in a Flask micro-web framework
 
-![Alt text]
+![Cat]
 (https://github.com/waleadekoya/FeeCalculator/tree/master/LendableProject/calculator_app/static/css/FeeCalculatorScreenshot.png)
 
 How to Install
