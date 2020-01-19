@@ -6,20 +6,20 @@ from fee_calculator import LoanApplication
 class FeeCalculatorTest(unittest.TestCase):
 
     def test_loan_fee(self):
-        self.assertEqual(LoanApplication(24, 2750).calculate_fee,
+        self.assertEqual(LoanApplication(24, 2750).calculate_fee(),
                          115)
 
     def test_min_loan_amt(self):
         application = LoanApplication(24, 850)
-        self.assertEqual(str(application.calculate_fee), str(AssertionError(LoanApplication.MIN_LOAN_AMT_ERROR_MSG)))
+        self.assertEqual(str(application.calculate_fee()), str(AssertionError(LoanApplication.MIN_LOAN_AMT_ERROR_MSG)))
 
     def test_max_loan_amt(self):
         application = LoanApplication(24, 112750)
-        self.assertEqual(str(application.calculate_fee), str(AssertionError(LoanApplication.MAX_LOAN_AMT_ERROR_MSG)))
+        self.assertEqual(str(application.calculate_fee()), str(AssertionError(LoanApplication.MAX_LOAN_AMT_ERROR_MSG)))
 
     def test_loan_term(self):
         application = LoanApplication(55, 20000)
-        self.assertEqual(str(application.calculate_fee), str(AssertionError(LoanApplication.TERM_ERROR_MSG)))
+        self.assertEqual(str(application.calculate_fee()), str(AssertionError(LoanApplication.TERM_ERROR_MSG)))
 
     def test_loan_plus_fee(self):
         application = LoanApplication(24, 2750)
