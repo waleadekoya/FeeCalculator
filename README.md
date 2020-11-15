@@ -1,4 +1,4 @@
-# A FeeCalculator wrapped in a Flask micro-web framework
+# A FeeCalculator wrapped in Flask micro-web framework
 
 ![img0](images/FeeCalculatorScreenshot.png)
 
