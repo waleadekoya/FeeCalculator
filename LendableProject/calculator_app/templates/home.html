@@ -7,13 +7,19 @@
 {% block title %}FeeCalculator{% endblock %}
 
 {% block content %}
+    <script src="static/scripts.js" defer></script>
     <div class="container">
         <h2>Loan Fee Calculator</h2>
         <br/>
         <fieldset>
             {{ wtf.quick_form(form, button_map={'submit': 'primary'}) }}
         </fieldset>
+
+        <label for="fees"></label>
+        <select class="form-control" id="fees"></select>
     </div>
+
+
 {% endblock %}
 
 

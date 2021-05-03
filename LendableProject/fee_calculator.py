@@ -23,6 +23,8 @@ class FeeCalculator(FeeStructure, ErrorMessages):
     def __init__(self, term: int, loan_amount: float):
         self._term = term
         self._loan_amount = loan_amount
+        self.calculate_fee()
+        self.loan_plus_fee()
 
     def calculate_fee(self):
         """
@@ -40,7 +42,7 @@ class FeeCalculator(FeeStructure, ErrorMessages):
             if self._loan_amount in self.fee_schedule.keys():
                 fee = self.fee_schedule.get(self._loan_amount).get(self._term)
             else:
-                fee = np.interp(self._loan_amount, self.LOAN_AMOUNTS, self._loan_term())
+                fee = np.interp(self._loan_amount, self.LOAN_AMOUNTS, self._fees)
             return self._round_fee(fee)
         except AssertionError as error:
             return error
@@ -57,7 +59,8 @@ class FeeCalculator(FeeStructure, ErrorMessages):
         assert self._loan_amount <= 20000, self.MAX_LOAN_AMT_ERROR_MSG
         assert self._term == 12 or self._term == 24, self.TERM_ERROR_MSG
 
-    def _loan_term(self):
+    @property
+    def _fees(self):
         return self.TERM_12M_FEES if self._term == self.TERM_12M else self.TERM_24M_FEES
 
     def loan_plus_fee(self):
